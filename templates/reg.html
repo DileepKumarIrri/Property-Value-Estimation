@@ -1,0 +1,70 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Real estate valuation</title>
+    <link href="static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+
+        <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="{{ url_for('reg') }}">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+            
+
+          </ul>
+        </div>
+         <button type="button" class="btn btn-b-n navbar-toggle-box-collapse d-none d-md-block" data-toggle="collapse"
+          data-target="#navbarTogglerDemo01" aria-expanded="false">
+        </button>
+    </nav>
+      <div class="intro intro-carousel">
+        <div >
+
+        <div class="carousel-item-a intro-item bg-image" style="background-image: url(static/img/sai.jpg)">
+          <div class="overlay overlay-a"></div>
+          <div class="intro-content display-table">
+            <div class="table-cell">
+              <h2 style="color:white;margin-bottom: 57px;padding-left: 282px;padding-top: 0‒;border-top-width: 30px;">Real Estate Valuation Using Machine Learning</h2>
+              <div class="container">
+                  <div class="col-lg-8">
+                    <div align="center" style="
+    padding-left: 223px;
+" >
+                      <form action="{{ url_for('reg') }}" method='post' >
+                            {% if message=="register" %}
+                                <h2 style="color:pink">Registration Successfully Completed,{{ name }}.</h2>
+                            {% endif %}
+                            <h3 style="color:red;width: 600px;">Registration</h3><br>
+                            <table align="center" style="color:white">
+                                <tr><td>Enter Name:</td><td><input type="text" name="name" required></td></tr>
+                                <tr><td>Enter Email Id:</td><td><input type="email" name="email" required></td></tr>
+                               <tr><td>Enter Password:</td><td><input type="text" name="pwd" required></td></tr>
+                               <tr><td>Enter Confirm Password:</td><td><input type="text" name="cpwd" required></td></tr>
+                                <tr><td>Enter Mobile Number:</td><td><input type="number" name="mno" min="10"></td></tr>
+                            </table>
+                            <br><input  class="btn btn-danger" type="submit" value="submit">
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <script src="static/js/main.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,65 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Real estate valuation</title>
+    <link href="static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+
+        <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('upload') }}">Upload Dataset</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">View Dataset</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Splitting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Model Performance</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#">Prediction</a>
+            </li>
+
+          </ul>
+        </div>
+        <button type="button" class="btn btn-b-n navbar-toggle-box-collapse d-none d-md-block" data-toggle="collapse"
+          data-target="#navbarTogglerDemo01" aria-expanded="false">
+        </button>
+    </nav>
+      <div class="intro intro-carousel">
+        <div >
+
+        <div class="carousel-item-a intro-item bg-image" style="background-image: url(static/img/sai.jpg)">
+          <div class="overlay overlay-a"></div>
+          <div class="intro-content display-table">
+            <div class="table-cell">
+              <div class="container">
+                  <div class="col-lg-8">
+
+                      <h1 class="intro-title mb-4">
+                          <span class="color-b">Real Estate Valuation</span></span><br> using machine learning</h1>
+                          
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <script src="static/js/main.js"></script>
+  </body>
+  </html>
